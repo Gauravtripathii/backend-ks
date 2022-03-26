@@ -1,7 +1,12 @@
 function CA_SignUp() {
   return (
     <form action="/">
-      <input type="text" />
+      <p>
+        <input type="text" placeholder="Name" />
+      </p>
+      <p>
+        <input type="text" placeholder="Email" />
+      </p>
     </form>
   );
 }
