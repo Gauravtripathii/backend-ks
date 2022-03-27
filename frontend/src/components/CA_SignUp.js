@@ -21,6 +21,9 @@ function CA_SignUp() {
       <p>
         <input type="password" placeholder="confirm password" />
       </p>
+      <p>
+        <input type="submit" value="Sign Up" />
+      </p>
     </form>
   );
 }
