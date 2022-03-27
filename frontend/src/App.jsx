@@ -1,4 +1,4 @@
-
+import React from "react";
 import CA_SignUp from "./components/CA_SignUp";
 
 function App() {
