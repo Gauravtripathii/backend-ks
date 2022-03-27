@@ -4,7 +4,7 @@ function CA_SignUp() {
     name: "",
     email: "",
   });
-
+ // handling changes when something typed in input box
   function handleChange(event) {
     const inputName = event.target.name;
     const inputValue = event.target.value;
@@ -15,7 +15,7 @@ function CA_SignUp() {
       };
     });
   }
-
+ // sending user data to server
   const postData = async () => {
     const { name, email } = userInfo;
     const res = await fetch("/signup", {
@@ -32,12 +32,15 @@ function CA_SignUp() {
     console.log(data);
   };
 
+  // submiting the form when button is clicked
   function handleClick(event) {
+    // sending user data to server onclicked
     postData();
     setUserInfo({
       name: "",
       email: "",
     });
+    // preventing default reloading the page while submiting the form
     event.preventDefault();
   }
   return (
