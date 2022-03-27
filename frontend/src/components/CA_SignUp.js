@@ -2,10 +2,10 @@ function CA_SignUp() {
   return (
     <form action="/">
       <p>
-        <input type="text" placeholder="Name" />
+        <input type="text" name="name" placeholder="Name" />
       </p>
       <p>
-        <input type="text" placeholder="Email" />
+        <input type="text" name="email" placeholder="Email" />
       </p>
       <p>
         <select>
