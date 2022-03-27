@@ -7,6 +7,20 @@ function CA_SignUp() {
       <p>
         <input type="text" placeholder="Email" />
       </p>
+      <p>
+        <select>
+          <option>Uni Name</option>
+        </select>
+      </p>
+      <p>
+        <input type="text" placeholder="username" />
+      </p>
+      <p>
+        <input type="password" placeholder="password" />
+      </p>
+      <p>
+        <input type="password" placeholder="confirm password" />
+      </p>
     </form>
   );
 }
