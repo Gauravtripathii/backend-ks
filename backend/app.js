@@ -5,11 +5,6 @@ const path = require("path");
 
 app.use(express.static(path.join(__dirname, "build")));
 
-<<<<<<< HEAD
-app.get("/", (req, res) => {
-  // res.send("Hello World");
-  res.sendFile(path.join(__dirname, "build", "index.html"));
-=======
 app.use(express.json());
 
 // app.get("/", (req, res) => {
@@ -18,7 +13,6 @@ app.use(express.json());
 
 app.post("/signup", (req, res) => {
   console.log(req.body);
->>>>>>> c6333ba97d1c29180dca36c8515b547830301fe2
 });
 
 app.listen(port, () => {
